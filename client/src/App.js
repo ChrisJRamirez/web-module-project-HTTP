@@ -51,10 +51,10 @@ const App = (props) => {
           <FavoriteMovieList favoriteMovies={favoriteMovies}/>
         
           <Switch>
-
-            <Route path="/movies/add/:id"
+          
+            <Route path="/movies/add"
                 render={(props) => {
-                  return <AddMovieForm {...props} />
+                  return <AddMovieForm {...props} setMovies={setMovies}/>
                 }}
               />
 
